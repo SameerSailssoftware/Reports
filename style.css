@@ -166,6 +166,196 @@ body{
     margin-right: 1px;
 }
 
+
+/* DatePicker CSS Starts......................... */
+
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    height: 56px;
+    width: 21rem !important;
+}
+
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 40px;
+}
+
+.fa-calendar-alt:before, .fa-calendar-days:before {
+    content: "\f073" !important;
+    color: #99aebe !important;
+}
+
+/* DatePicker CSS End......................... */
+
+
+/* Dropdown CSS Starts................................................................................................... */
+
+
+select {
+    background: #fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjMiPjxwYXRoIGQ9Im0gMCwxIDEsMiAxLC0yIHoiLz48L3N2Zz4=) no-repeat scroll 95% center/10px 15px;
+    color: #99AEBE;
+    background-position: calc(100% - 15px) center;
+    border: 1px solid #aaa;
+    border-radius: .2em;
+    cursor: pointer;
+    width: 300px;
+    height: 56px;
+    box-sizing: border-box;
+    padding: .3em .45em;
+    transition: all .3s;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none
+}
+
+
+/* Dropdown CSS End................................................................................................... */
+
+
+/* Search Bar Css starts........................ */
+
+
+* {
+    box-sizing: border-box;
+  }
+  .example{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width:300px
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #31afe5;
+    float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 56px;
+    width: 240px;
+    background: #ffe7da;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 56px;
+    padding: 10px;
+    background: #d8f3ff;
+    color: #31afe5;
+    font-size: 17px;
+    border: 1px solid #31afe5;
+    border-left: none;
+    cursor: pointer;
+  }
+
+
+
+/* Search Bar Css End........................ */
+
+
+
+
+
+/* Dropdown CSS Starts........................ */
+
+select::-ms-expand {
+   display: none;
+}
+.select {
+   position: relative;
+   display: flex;
+   width: 18em;
+   height: 56px;
+   line-height: 3;
+   background: #5c6664;
+   overflow: hidden;
+   border-radius: .25em;
+}
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    right: 0;
+    color: #99AEBE;
+    border: 1px solid #99AEBE;
+    height: 56px;
+    padding: 0 1em;
+    background: #ecf2f8;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+.select:hover::after {
+   color: #23b499;
+}
+
+
+/* Dropdown CSS End........................ */
+
+
+/* DatePicker CSS Starts......................... */
+
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    height: 56px;
+    width: 21rem !important;
+}
+
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 40px;
+}
+
+.fa-calendar-alt:before, .fa-calendar-days:before {
+    content: "\f073" !important;
+    color: #99aebe !important;
+}
+
+/* DatePicker CSS End......................... */
+
+/* Input field CSS Starts............... */
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+    width: 300px !important;
+    height: 120px !important;
+}
+
+/* Input field CSS End............... */
+
+
+
+
 .input-group {
     position: relative;
     display: flex;
@@ -176,7 +366,8 @@ body{
 }
 
 .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
-    font-size: 11px;
+    font-size: 15px;
+    color: #5d636b;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
