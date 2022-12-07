@@ -796,11 +796,6 @@ padding: 9px 0px;
     justify-content: space-between;
 }
 
-.container {
-    display: flex;
-    margin-left: 0px;
-    column-gap: 30px;
-}
 
 .show {
     visibility: visible;
@@ -821,7 +816,7 @@ padding: 9px 0px;
     /* flex-wrap: wrap; */
     height: 40px;
     align-items: stretch;
-    width: 20rem;
+    width: 21rem;
 }
 
 .input-group-text {
