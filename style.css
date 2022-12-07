@@ -323,11 +323,6 @@ body{
     font-family: sans-serif;
 }
 
-#vehicle1{
-    margin: 6px 4px;
-    height: 16px;
-    width: 16px;
-}
 
 .spc2{
     display: flex;
@@ -978,6 +973,11 @@ td {
     height: 16px;
     width: 16px;
 }
+
+input[type=checkbox] {
+    accent-color: #31AFE5;
+    
+  }
 
 td {
     background-color: white;
