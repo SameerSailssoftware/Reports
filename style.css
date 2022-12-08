@@ -11,6 +11,10 @@ body{
     color: #31AFE5 !important;
 }
 
+.upper{
+    text-transform: uppercase;
+}
+
 .form-control {
     display: block;
     width: 100%;
@@ -47,6 +51,8 @@ body{
     appearance: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
