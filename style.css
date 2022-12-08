@@ -1367,12 +1367,13 @@ fieldset {
 }
 
 .py-5 {
-    padding-left: 13px;
+    padding-left: 7px;
+    padding-right: 13px;
     color: #5d636b;
     display: flex;
     line-height: 1.1rem;
     font-size: 15px;
-    width: 100%;
+    width: max-content;
     padding-top: 1rem !important;
     padding-bottom: 0.5rem !important;
 }
