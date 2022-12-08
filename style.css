@@ -39,7 +39,7 @@ body{
     display: block;
     width: 100%;
     padding: .375rem .75rem;
-    font-size: 1rem;
+    font-size: 15px;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
@@ -409,7 +409,7 @@ textarea {
 
 .py-2 {
     color: #31afe5;
-    font-size: 13px;
+    font-size: 15px;
     width: 320px;
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
@@ -995,7 +995,7 @@ padding: 9px 0px;
 
 .py-3 {
     color: #31afe5;
-    font-size: 13px;
+    font-size: 15px;
     width: 100%;
     font-weight: 600;
     padding-top: 0.5rem !important;
