@@ -944,6 +944,10 @@ padding: 9px 0px;
     align-items: center;
 }
 
+.pt-3 {
+    padding-top: .5rem !important;
+}
+
 .pt-5 {
     padding-top: 2rem !important;
 }
