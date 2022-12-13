@@ -56,6 +56,29 @@ body{
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+
+.form-control4 {
+    display: block;
+    width: 100%;
+    padding: .375rem 1.75rem;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
 .nav1 {
     background-color: #31afe5 !important;
     border-top-left-radius: 5px;
@@ -476,6 +499,68 @@ textarea {
     width: 3px;
     margin-top: 11px;
 }
+
+
+/* Tabs CSS Starts....................................................................... */
+
+.nav-tabs {
+    border-bottom: 2px solid #31afe5;
+    width: 98%;
+    margin-top: 1.5rem !important;
+    margin-bottom: -1.2rem !important;
+    margin-left: 1.5rem !important;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-image: url(icon/Rectangle\ 197.png);
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: smaller;
+    background-color: #ecf4fa;
+    font-family: sans-serif;
+    width: 130px;
+    height: 44px;
+    background-repeat: no-repeat;
+    border-color: #ecf4fa;
+    border: none;
+}
+
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    color: #5D636B;
+    background-image: url(icon/Rectangle\ 198.png);
+    font-size: smaller;
+    background-color: #ecf4fa;
+    padding-top: 10px;
+    font-family: sans-serif;
+    width: 130px;
+    height: 44px;
+    background-repeat: no-repeat;
+    /* border-color: #dee2e6 #dee2e6 #fff; */
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    padding-right: 10px;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.unit { 
+    position: absolute;
+    left: 6px;
+    padding: 0 5px;
+    font-size: 20px;
+    top: 10px;
+    color: #31afe5;
+  }
+
+
+
+/* Tabs CSS End....................................................................... */
 
 
 
