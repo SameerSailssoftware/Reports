@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reports | Patient Medication Adherence Report</title>
+  <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- Bootstrap 4 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+  <!-- Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js" integrity="sha256-VBLiveTKyUZMEzJd6z2mhfxIqz3ZATCuVMawPZGzIfA=" crossorigin="anonymous"></script>
+
+  <!-- Tempus Dominus Bootstrap 4 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"></script>
+    
+  
+</head>
+
+<body>
+
+  <div class="pt-5 pl-4">
+    <div class="title">
+      <h2 class="title-text ml-lg-12 ">Reports | <span class="blue">  Patient Medication Adherence Report
+      </span>
+      </h2>
+    </div>
+     
+      
+    </div>
+  <div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-light nav1">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Patient Medication Adherence Report</a>
+
+      </div>
+    </nav>
+
+  <div class="col-12 area flex" style="height: 51rem;">
+    
+    <div class="col-6" style="height:30rem; width: 40%;">
+
+
+
+
+      <section class="container pt-3">
+        
+      </section>
+
+     
+      <section class="container pt-3 pb-3">
+        <div>
+          <h5 class="py-3"> Measurement Period Start</h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group3 date" id="datepicker">
+                <input type="text" class="form-control2" id="date" placeholder="02/30/2022">
+                <span class="input-group-append">
+                  <span class="input-group-text bg-#DCDCDC d-block">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div>
+          <h5 class="py-3"> Measurement Period End</h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group3 date" id="datepicker">
+                <input type="text" class="form-control2" id="date" placeholder="09/10/2022">
+                <span class="input-group-append">
+                  <span class="input-group-text bg-#DCDCDC d-block">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="py-2 pl-0" id="btnside">
+           <button class="btn" id="btn7"><span>- S</span> ADVANCED SEARCH</button>
+       </div>
+
+      </section>
+
+
+     
+      <nav class="navbar navbar-expand-lg navbar-light nav1">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">Selected Patients </a>
+          
+            <button class="btn" id="btn7"><span>- C</span> CLEAR ALL</button>
+        </div>
+      </nav>
+      
+
+
+
+      <table id="tbstud">
+        <tbody>
+          <tr>
+          <th class="column_heading2" style="border-top-left-radius: 5px;">Remove</th>
+          <th class="column_heading2">Patient Name</th>
+          <th class="column_heading2">Age</th>
+  
+          <th class="column_heading2" style="border-top-right-radius: 5px;">Insurance
+            <button type="button" class="btn" id="comments" onclick="openPopup6()"> <img src="icon/settings.png" height="15" width="15"></button></th>
+          </tr>
+  
+  
+        <tr class="customer_row">
+          <td class="left-5">
+            <input type="image" src="icon/x.png" style="margin-top: -3px;" class="rx-history-icon">&nbsp;          </td>
+          <td class="brown"> SEKHAR, CHNADRA </td>
+          <td class="brown">31 YRS, 0M</td>
+          <td class="brown">CASH</td>
+        </tr>
+
+
+        <tr class="customer_row">
+            <td class="left-5">
+              <input type="image" src="icon/x.png" style="margin-top: -3px;" class="rx-history-icon">&nbsp;          </td>
+            <td class="brown"> DANA, JOHNSON </td>
+            <td class="brown">91 YRS, 5M</td>
+            <td class="brown">RH1</td>
+        </tr>
+
+
+        <tr class="customer_row">
+            <td class="left-5">
+              <input type="image" src="icon/x.png" style="margin-top: -3px;" class="rx-history-icon">&nbsp;          </td>
+            <td class="brown">MANGO JELLY</td>
+            <td class="brown">61 YRS, 5M</td>
+            <td class="brown">UNITEDHLTH</td>
+        </tr>
+
+        <tr class="customer_row">
+            <td class="left-5">
+              <input type="image" src="icon/x.png" style="margin-top: -3px;" class="rx-history-icon">&nbsp;          </td>
+            <td class="brown"> APPLE, PIE </td>
+            <td class="brown">22 YRS, 9M</td>
+            <td class="brown">MAD</td>
+        </tr>
+
+        <tr class="customer_row">
+          <td class="left-5">
+            <input type="image" src="icon/x.png" style="margin-top: -3px;" class="rx-history-icon">&nbsp;          </td>
+          <td class="brown">WINSTON, ADDINGT </td>
+          <td class="brown">20 YRS, 9M</td>
+          <td class="brown">MAD</td>
+      </tr>
+  
+        
+        
+        </tbody>
+        </table>
+
+
+
+
+
+      <section class="container pt-2">
+        <div>
+          <h5 class="py-2 bold">Medication Adherence Category
+          </h5>
+        </div>
+
+      </section>
+
+
+      <div class="container gap-1">
+        <div style="display: contents;">
+          <div class="col-sm">
+            <table id="tbstud">
+              <tbody>
+                <tr>
+                <th class="column_heading3" style="border-top-left-radius: 5px;"></th>
+                <th class="column_heading3">Category Name  </th>
+                <th class="column_heading3">Actions</th>
+        
+                <th class="column_heading3" style="border-top-right-radius: 5px;">Sys Def.<br> Concept?</th>
+                </tr>
+        
+        
+              <tr class="customer_row">
+                <td class="left-5">
+                  <input type="checkbox" id="vehicle1">
+                </td>
+                <td class="brown"> AntiDiabetics </td>
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown">Yes</td>
+              </tr>
+      
+      
+              <tr class="customer_row">
+                  <td class="left-5">
+                    <input type="checkbox" id="vehicle1">
+                  </td>
+                  <td class="brown"> Bllod Pressure
+                  </td>
+                  <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                  <td class="brown">Yes</td>
+              </tr>
+      
+      
+              <tr class="customer_row">
+                <td class="left-5">
+                  <input type="checkbox" id="vehicle1">
+                </td>
+                <td class="brown"> Lipid Modifying AG
+                </td>
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown">No</td>
+              </tr>
+      
+              <tr class="customer_row">
+                <td class="left-5">
+                  <input type="checkbox" id="vehicle1">
+                </td>
+                <td class="brown"> Antagonists </td>
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown">No</td>
+              </tr>
+      
+              <tr class="customer_row">
+                <td class="left-5">
+                  <input type="checkbox" id="vehicle1">
+                </td>
+                <td class="brown"> RAS Antagonists
+                </td>
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown">No</td>
+              </tr>
+        
+              
+              
+              </tbody>
+              </table>
+          </div>
+          <div class="col-sm">
+            <table id="tbstud">
+              <tbody>
+                <tr>
+                <th class="column_heading3" style="border-top-left-radius: 5px;"></th>
+                <th class="column_heading3" style="width: 3rem;">ID</th>
+                <th class="column_heading3" style="width: 100%;">Concept Name</th>
+        
+                <th class="column_heading3" style="border-top-right-radius: 5px;">Sys Def.<br> Concept? </th>
+                </tr>
+        
+        
+              <tr class="customer_row">
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown"> 51 </td>
+                <td class="brown"> Alpha-Glucosidase Inhibitor Anti </td>
+                <td class="brown">Yes</td>
+              </tr>
+      
+      
+              <tr class="customer_row">
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown"> 72 </td>
+                <td class="brown"> Animal Insulins                </td>
+                <td class="brown">Yes</td>
+              </tr>
+      
+      
+              <tr class="customer_row">
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown"> 249 </td>
+                <td class="brown"> Sulfonylurea and Thiazolidindion
+                </td>
+                <td class="brown">No</td>
+              </tr>
+      
+              <tr class="customer_row">
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown"> 250 </td>
+                <td class="brown"> Biguanide and Sulfonylura Antidi
+                </td>
+                <td class="brown">No</td>
+              </tr>
+      
+              <tr class="customer_row">
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown"> 270 </td>
+                <td class="brown"> Cyclo-Oxygenase Inhibitor Platel
+                </td>
+                <td class="brown">No</td>
+              </tr>
+        
+              
+              
+              </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="py-2 pl-0" id="btnside">
+           <button class="btn8"><span>- D</span> ADD THERAP. CLASS BY DRUG</button>
+            <button class="btn8"><span>- A</span> ADD CATEGORY</button>
+            <button class="btn8"><span>- B</span> ADD THERAP. BY CLASS</button>
+        </div>
+      </div>
+      
+
+      <div>
+        <div class="py-2 pl-0" id="btnside">
+           <button class="btn" id="btn7"><span>- V</span> VIEW DATA SET</button>
+            <button class="btn" id="btn7"><span>- P</span> PREVIEW</button>
+            <button class="btn" id="btn7"><span>- T</span> PRINT</button>
+            <button class="btn" id="btn7"><span>- C</span> CANCEL</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="area col-6 pt-2" style="height: 48rem; width: 68rem; border:1px solid rgba(0, 0, 0 4%);">
+
+      <img src="icon/image 4.png" alt="" style="width: 1094.73px;
+      height: 768.51px;">
+
+    </div>
+
+  </div>
+
+  </div>
+
+  <script src="js/tracking.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+
+</body>
+
+</html>
