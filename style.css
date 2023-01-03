@@ -400,7 +400,7 @@ select::-ms-expand {
     /* flex-wrap: wrap; */
     height: 40px;
     align-items: stretch;
-    width: 26rem;
+    width: 21rem;
 }
 
 .input-group3 {
