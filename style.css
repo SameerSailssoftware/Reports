@@ -424,6 +424,15 @@ select::-ms-expand {
     width: 21rem;
 }
 
+.input-group6 {
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 45px;
+    align-items: stretch;
+    width: 31rem !important;
+}
+
 
 
 
