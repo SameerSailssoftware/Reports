@@ -1058,7 +1058,7 @@ padding: 9px 0px;
 
 #btnside{
     /* padding-left: 42%; */
-    column-gap: 10px;
+    /* column-gap: 10px; */
     display: flex;
     margin-top: 18px;
     width: 100%;
