@@ -433,6 +433,15 @@ select::-ms-expand {
     width: 31rem !important;
 }
 
+.input-group7 {
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 40px;
+    align-items: stretch;
+    width: 26rem;
+}
+
 
 
 
