@@ -711,6 +711,7 @@ textarea {
     /* background-color: white; */
     text-align: left;
     padding-left: 3rem;
+    color: #5D636B;
     font-family: sans-serif;
     height: 33px;
     font-size: 12px;
@@ -1249,15 +1250,15 @@ padding: 9px 0px;
     width: 100%;
     /* margin: 50px auto; */
     border-collapse: separate;
-    border-spacing: 3px;
+    padding: 10px;
     /* box-shadow: 0 1px 4px 0px rgb(0 0 50 / 15%); */
     border-radius: 5px;
 }
 
 
 .rx-history-icon {
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     vertical-align: middle;
 }
 
@@ -1313,15 +1314,6 @@ padding: 9px 0px;
     align-items: center;
 }
 
-#tbstud {
-    width: 100%;
-    /* margin: 50px auto; */
-    background-color: #ebf3f9;
-    border-collapse: separate;
-    border-spacing: 3px;
-    box-shadow: 0 1px 4px 0px rgb(236 244 250);
-    border-radius: 5px;
-}
 
 .column_heading {
     background-color: #31afe5;
@@ -1390,7 +1382,7 @@ padding: 9px 0px;
     font-family: sans-serif;
     height: 33px;
     font-size: 14px;
-    box-shadow: 0 4px 2px 0px rgb(0 0 0 / 10%);
+    box-shadow: 0 0px 4px 0px rgb(0 0 0 / 25%);
 }
 
 .spc2 {
@@ -1410,7 +1402,8 @@ td {
 
 input[type=checkbox] {
     accent-color: #31AFE5;
-    
+    height: 17px;
+    width: 17px;
   }
 
 td {
