@@ -399,7 +399,7 @@ select::-ms-expand {
     display: flex;
     /* flex-wrap: wrap; */
     height: 40px;
-    align-items: stretch;
+    align-items: center;
     width: 21rem;
 }
 
@@ -1218,6 +1218,14 @@ padding: 9px 0px;
     padding-bottom: 0.5rem !important;
 }
 
+.py-4 {
+    color: #31afe5;
+    font-size: 15px;
+    width: 178px;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
 
 
 .input-group-text {
@@ -1575,15 +1583,16 @@ fieldset {
 }
 
 #btn9 {
-    background-color: #ffffff;
+    background-color: #e3f6ff;
     height: 40px;
+    width: 43.5rem;
     margin-left: 1rem;
     border-width: 1px;
     font-weight: 550;
-    border-color: #51a351;
+    /* border-color: #51a351; */
     align-self: center;
     font-size: 13px;
-    color: #51a351;
+    color: #31afe5;
     border-radius: 5px;
 }
 
@@ -1757,3 +1766,17 @@ bg-brown{
 
 
 /* TOP PERFORMERS REPORT CSS Starts............................................................................ */
+
+
+hr {
+    border: none;
+    border-top: 2px dotted #292b2d;
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+  }
+
+ .mt--13{
+    width: 9.5rem !important;
+  }
