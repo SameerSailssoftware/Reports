@@ -611,6 +611,14 @@ textarea {
 
 /* Tabs CSS Starts....................................................................... */
 
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    padding-right: 10px;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
 .nav-tabs {
     border-bottom: 2px solid #31afe5;
     width: 98%;
@@ -649,13 +657,43 @@ textarea {
     /* border-color: #dee2e6 #dee2e6 #fff; */
 }
 
-.nav-tabs .nav-link {
-    margin-bottom: -1px;
+
+.nav-tabs2 .nav-item.show .nav-link, .nav-tabs2 .nav-link.active {
+    color: #ffffff;
+    background-image: url(icon/Rectangle\ 199.png);
+    padding-top: 10px;
     padding-right: 10px;
-    border: 1px solid transparent;
-    border-top-left-radius: .25rem;
-    border-top-right-radius: .25rem;
+    font-size: smaller;
+    background-color: #ecf4fa;
+    font-family: sans-serif;
+    width: 243px;
+    height: 44px;
+    background-repeat: no-repeat;
+    border-color: #ecf4fa;
+    border: none;
 }
+
+.nav-tabs2 .nav-item.show .nav-link, .nav-tabs2 .nav-link {
+    color: #5D636B;
+    background-image: url(icon/Rectangle\ 200.png);
+    font-size: smaller;
+    background-color: #ecf4fa;
+    padding-top: 10px;
+    font-family: sans-serif;
+    width: 243px;
+    height: 44px;
+    background-repeat: no-repeat;
+    border-color: #fff0 !important;
+}
+
+.nav-tabs2 {
+    border-bottom: 2px solid #31afe5;
+    width: 98%;
+    margin-top: 1.5rem !important;
+    margin-bottom: -1.2rem !important;
+    margin-left: 1.5rem !important;
+}
+
 
 .unit { 
     position: absolute;
@@ -1130,7 +1168,6 @@ padding: 9px 0px;
 .container {
     display: flex;
     justify-content: space-between;
-    margin-left: 32px;
     column-gap: 50px;
 }
 }
@@ -1299,7 +1336,7 @@ padding: 9px 0px;
 #btn5 {
     background-color: #ffffff;
     height: 40px;
-    width: 98px;
+    width: 99px;
     border-width: 1px;
     font-weight: 550;
     border-color: #51a351;

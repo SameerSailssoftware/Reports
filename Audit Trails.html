@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Audit Trails</title>
+  <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+  <link rel="stylesheet" href="style.css">
+
+
+    <!-- Bootstrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+  <!-- Moment.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- Tempus Dominus Bootstrap 4 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"></script>
+  
+  
+</head>
+
+
+   <body>
+
+    <div>
+      <ul class="nav nav-tabs2 pt-1 pl-3" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="price_change-tab" data-bs-toggle="tab" data-bs-target="#price_change" type="button" role="tab" aria-controls="price_change" aria-selected="true">Control Rx and Logical Auditing</button>
+        </li>
+  
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="reveunue-tab" data-bs-toggle="tab" data-bs-target="#reveunue" type="button" role="tab" aria-controls="reveunue" aria-selected="false">Control Rxs Incident Auditing</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="reveunue-tab" data-bs-toggle="tab" data-bs-target="#reveunue" type="button" role="tab" aria-controls="reveunue" aria-selected="false">Analyse Rx Audit Trail</button>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <div class=" pl-4">
+      <div class="title">
+        
+      </div>
+    </div>
+
+
+    <div class="tab-content">
+
+
+
+
+
+      <!-- Follow-Up Faxed Refill Start................. -->
+  
+      <div class="tab-pane fade show active" id="price_change" role="tabpanel" aria-labelledby="price_change-tab">
+
+
+    <div class="m-4 pt-4">
+      <nav class="navbar navbar-expand-lg navbar-light nav1">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">Control Rxs and Logical Access Auditing - Control Rx Change
+          </a>
+  
+        </div>
+      </nav>
+  
+      <div class="area" style="height: 6rem;">
+  
+  
+        <section class="container">
+          <div>
+            <h5 class="py-2">From Date
+            </h5>
+            <form class="row">
+              <div class="col-3">
+                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" placeholder="10/03/2023" data-target="#datetimepicker1">
+                              <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
+                              </div>
+                        </div>
+              </div>
+            </form>
+          </div>
+  
+          <div>
+            <h5 class="py-2">To Date</h5>
+            <form class="row">
+              <div class="col-3">
+                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" placeholder="10/03/2023" data-target="#datetimepicker1">
+                              <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
+                              </div>
+                        </div>
+              </div>
+            </form>
+          </div>
+
+
+          <div>
+            <h5 class="py-2">To Date</h5>
+            <form class="row">
+              <div class="col-3">
+                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" placeholder="10/03/2023" data-target="#datetimepicker1">
+                              <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-sort-desc"></i></div>
+                              </div>
+                        </div>
+              </div>
+            </form>
+          </div>
+          
+          <div>
+            <h5 class="py-2">To Date</h5>
+            <form class="row">
+              <div class="col-3">
+                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" placeholder="10/03/2023" data-target="#datetimepicker1">
+                              <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-sort-desc"></i></div>
+                              </div>
+                        </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="py-2 pl-5" id="btnside">
+            <button class="btn" id="btn5"><span>- S</span> SEARCH</button>
+            <button class="btn" id="btn5"><span>- L</span> CLEAR</button>
+        </div>
+  
+        </section>
+
+        <div>
+          <ul class="nav nav-tabs2 pt-1 pl-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="price_change-tab" data-bs-toggle="tab" data-bs-target="#price_change" type="button" role="tab" aria-controls="price_change" aria-selected="true">Control Rx and Logical Auditing</button>
+            </li>
+      
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="reveunue-tab" data-bs-toggle="tab" data-bs-target="#reveunue" type="button" role="tab" aria-controls="reveunue" aria-selected="false">Control Rxs Incident Auditing</button>
+            </li>
+    
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="reveunue-tab" data-bs-toggle="tab" data-bs-target="#reveunue" type="button" role="tab" aria-controls="reveunue" aria-selected="false">Analyse Rx Audit Trail</button>
+            </li>
+    
+          </ul>
+        </div>
+
+      </div>
+  
+    </div>
+
+
+     
+      </div>
+
+
+
+
+
+      <div class="tab-pane fade show active" id="reveunue" role="tabpanel" aria-labelledby="reveunue-tab">
+
+
+        <div class="pl-4">
+          <div class="title">
+          </div>
+        </div>
+    
+    
+        <div class="m-4 pt-4">
+          <nav class="navbar navbar-expand-lg navbar-light nav1">
+            <div class="container-fluid">
+              <a href="#" class="navbar-brand">GSDD Price Update
+              </a>
+      
+            </div>
+          </nav>
+      
+        <div class="col-12 area flex" style="height: 51rem;">
+          
+          <div class="col-6" style="height:30rem; width: 40%;">
+      
+      
+      
+      
+            <section class="container pt-3">
+              
+            </section>
+      
+           
+            <section class="container pt-3 pb-3">
+              <div>
+                <h5 class="py-3">From Fill Date</h5>
+                <form class="row">
+                  <div class="col-3">
+                    <div class="input-group3 date" id="datepicker">
+                      <input type="text" class="form-control2" id="date" placeholder="10/03/2023">
+                      <span class="input-group-append">
+                        <span class="input-group-text bg-#DCDCDC d-block">
+                          <i class="fa fa-calendar"></i>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div>
+                <h5 class="py-3">To Fill Date</h5>
+                <form class="row">
+                  <div class="col-3">
+                    <div class="input-group3 date" id="datepicker">
+                      <input type="text" class="form-control2" id="date" placeholder="10/10/2023">
+                      <span class="input-group-append">
+                        <span class="input-group-text bg-#DCDCDC d-block">
+                          <i class="fa fa-calendar"></i>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+      
+      
+              <div class="py-2 pl-0" id="btnside">
+                 <button class="btn" id="btn6"><span>- S</span> SEARCH</button>
+                 <button class="btn" id="btn7"><span>- L</span> CLEAR</button>
+             </div>
+      
+            </section>
+      
+      
+      
+      
+           
+      
+      
+            <table id="tbstud">
+              <tbody>
+                <tr>
+                <th class="column_heading3" style="border-top-left-radius: 5px;"></th>
+                <th class="column_heading3">Category Name  </th>
+                <th class="column_heading3">Actions</th>
+        
+                <th class="column_heading3" style="border-top-right-radius: 5px;">Sys Def.<br> Concept?</th>
+                </tr>
+        
+        
+              <tr class="customer_row">
+                <td class="left-5">
+                  <input type="checkbox" id="vehicle1">
+                </td>
+                <td class="brown"> AntiDiabetics </td>
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown">Yes</td>
+              </tr>
+      
+      
+              <tr class="customer_row">
+                  <td class="left-5">
+                    <input type="checkbox" id="vehicle1">
+                  </td>
+                  <td class="brown"> Bllod Pressure
+                  </td>
+                  <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                  <td class="brown">Yes</td>
+              </tr>
+      
+      
+              <tr class="customer_row">
+                <td class="left-5">
+                  <input type="checkbox" id="vehicle1">
+                </td>
+                <td class="brown"> Lipid Modifying AG
+                </td>
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown">No</td>
+              </tr>
+      
+              <tr class="customer_row">
+                <td class="left-5">
+                  <input type="checkbox" id="vehicle1">
+                </td>
+                <td class="brown"> Antagonists </td>
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown">No</td>
+              </tr>
+      
+              <tr class="customer_row">
+                <td class="left-5">
+                  <input type="checkbox" id="vehicle1">
+                </td>
+                <td class="brown"> RAS Antagonists
+                </td>
+                <td class="brown"> <input type="image" src="icon/bin.png" style="margin-top: -3px;" class="rx-history-icon"></td>
+                <td class="brown">No</td>
+              </tr>
+        
+              
+              
+              </tbody>
+            </table>
+      
+          
+            <div class="m-4">
+              <nav class="navbar navbar-expand-lg navbar-light spc4">
+                <div class="container-fluid">
+                  
+              <div class="pagination p1">
+                <ul>
+                  <a href="#" class="arw"><li>&lt;</li></a>
+                  <a class="is-active" href="#"><li>1</li></a>
+                  <a href="#"><li>2</li></a>
+                  <a href="#"><li>3</li></a>
+                  <a href="#"><li>4</li></a>
+                  <a href="#"><li>5</li></a>
+                  <a href="#" class="arw"><li>&gt;</li></a>
+                </ul>
+          
+                <div class="pagination p1">
+                  <b class="trs">Total Records: <span style="color:#5D636B"> 17</span></b>
+                  </div>
+              </div>
+          
+              
+          
+          
+              <div class="footerbtn">
+          
+                <div class="dropdown">
+                  <app-rx-select>
+                    <div class="form-group custom--input custom--select default"><fieldset>
+                      <span class="custom--select__span">
+                        <select class="rx--select" id="undefined" tabindex="0" title=""><option value="All" id="All">&nbsp; 15 </option>
+                          <option value="Unbilled" id="Unbilled">Unbilled </option>
+                          <option value="Billed" id="Billed">Billed </option>
+                          <option value="Deferred" id="Deferred">Deferred </option>
+                        </select></span>
+                      </fieldset></div>
+                    </app-rx-select>
+            
+            
+                
+            
+              </div>
+          
+              
+              <!-- <div class="btn2">
+                <button class="btn" id="btnd"> PRINT REPORT</button>
+              </div>
+              
+              <div class="btn2">
+                <button class="btn" id="btnd"> VIEW REPORT</button>
+              </div>
+          
+              <div class="btn2">
+                <button class="btn" id="btnd"> CHANGE DELIVERY DRIVER</button>
+              </div>
+          
+              <div class="btn2">
+                <button class="btn" id="btnd"> DELIVERY ROUTE</button>
+              </div> -->
+          
+              <div class="btn2">
+                <button class="btn" id="btn0"><span>- J</span> EXPORT</button>
+              </div>
+          
+            </div>
+          
+              
+           
+                </div>
+              </nav>
+            </div>
+      
+          </div>
+      
+          <div class="area col-6 pt-2" style="height: 48rem; width: 68rem; border:1px solid rgba(0, 0, 0 4%);">
+      
+            <img src="icon/image 5.png" alt="" style="width: 1094.73px;
+            height: 768.51px;">
+      
+          </div>
+      
+        </div>
+      
+        </div>
+    
+    
+         
+      </div>
+
+
+
+
+
+
+
+   </div>
+   
+  
+  
+
+
+   <script src="js/tracking.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  </body>
+
+
+
+
+
+</html>
