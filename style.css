@@ -538,6 +538,10 @@ textarea {
     width: 100%;
 }
 
+.col-6 {
+    width: 42% !important;
+}
+
 .py-2 {
     color: #31afe5;
     font-size: 15px;
