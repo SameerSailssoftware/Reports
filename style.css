@@ -1121,7 +1121,7 @@ padding: 9px 0px;
 
 #btnside{
     /* padding-left: 42%; */
-    /* column-gap: 10px; */
+    column-gap: 15px;
     display: flex;
     margin-top: 18px;
     width: 100%;
@@ -1170,7 +1170,7 @@ padding: 9px 0px;
 .container {
     display: flex;
     justify-content: space-between;
-    column-gap: 50px;
+    column-gap: 25px;
 }
 }
 
