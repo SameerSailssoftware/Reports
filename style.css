@@ -443,6 +443,7 @@ select::-ms-expand {
 }
 
 
+
 .input-group8 {
     position: relative;
     display: -ms-flexbox;
@@ -455,6 +456,14 @@ select::-ms-expand {
     align-items: stretch;
 }
 
+.input-group9 {
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 40px;
+    align-items: center;
+    width: 10rem;
+}
 
 
 
