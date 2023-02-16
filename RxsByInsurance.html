@@ -172,7 +172,7 @@
             <div class="col-3">
               <div class="input-group9 date" id="datepicker">
                 <label class="form-check-label mt--10" for="flexRadioDefault1">
-                  <h5 class="py-5">Only for RX Amount >=</h5>
+                  <h5 class="py-5 blue">Only for RX Amount >=</h5>
                  </label>
                  <form class="row">
                   <div class="col-3">
@@ -191,59 +191,188 @@
           </form>
         </div>
 
-        <div class="flex">
-          <h5 class="py-3">340B Pharmacy</h5>
+        <div>
           <form class="row">
             <div class="col-3">
-              <input type="checkbox" checked="">
+              <div class="input-group2 date w-100" style="margin-right: 160px;" id="datepicker">
+                <label class="form-check-label mt--10" for="flexRadioDefault1">
+                  <h5 class="py-5 blue">Include Cash Rx(s)?
+                </h5>
+                </label> 
+                <input type="checkbox" id="vehicle1">
+                </label>
+
+              </div>
             </div>
+            
           </form>
         </div>
+
         
 
       </section>
 
-      <section class="container pt-2">
+      <section class="container pt-2" style="justify-content: stretch; !important">
+
         <div>
-          <h5 class="py-2">Patient Setting</h5>
+          <form class="row">
+            <div class="col-3 pt-2">
+
+              <div>
+                <div class="form-check flex align-items-center">
+                  <input type="checkbox" id="vehicle1">
+                  <label class="form-check-label mt--10" for="flexRadioDefault1">
+                   <h5 class="py-5 blue">Only Print Rx(s) where Ins Paid Zero(0)
+                  </h5>
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <div class="form-check flex align-items-center">
+                  <input type="checkbox" id="vehicle1">
+                  <label class="form-check-label mt--10" for="flexRadioDefault1">
+                   <h5 class="py-5 blue">Show Drug Cost
+                  </h5>
+                  </label>
+                </div>
+              </div>
+
+
+            </div>
+          </form>
+        </div>
+
+
+        <div style="margin: 0px 58px;">
+          <form class="row">
+            <div class="col-3 pt-2">
+
+              <div>
+                <div class="form-check flex align-items-center">
+                  <label class="form-check-label mt--10" for="flexRadioDefault1">
+                   <h5 class="py-5 blue">Show Patient Copy
+                  </h5>
+                  </label>
+                  <input type="checkbox" id="vehicle1">
+                </div>
+              </div>
+
+              <div>
+                <div class="form-check flex align-items-center">
+                  <label class="form-check-label mt--10" for="flexRadioDefault1">
+                   <h5 class="py-5 blue">Include Medicaid Rx(s)?
+                  </h5>
+                  </label>
+                  <input type="checkbox" id="vehicle1">
+                </div>
+              </div>
+
+
+            </div>
+          </form>
+        </div>
+
+
+          
+
+      </section>
+
+      <section class="container pt-1" style="justify-content: stretch; !important">
+        <div>
+          <h5 class="py-2">Included Ins Codes
+          </h5>
           <form class="row">
             <div class="col-3">
-              <div class="input-group2 date w-100" id="datepicker">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label mt--10" for="flexRadioDefault1">
-                  <h5 class="py-5">Refill Reminder Yes
-                 </h5>
-                 </label> &nbsp; &nbsp; &nbsp;
-
-                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">              
-                <label class="form-check-label mt--10" for="flexRadioDefault1">
-                  <h5 class="py-5">Refill Reminder No
-                 </h5>
-                </label> &nbsp; &nbsp; &nbsp;
-
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>              
-                <label class="form-check-label mt--10" for="flexRadioDefault1">
-                  <h5 class="py-5">All
-                 </h5>
-                </label>
-
+              <div class="input-group6 date w-36" id="datepicker">
+                <input type="text" class="form-control bg-brown" id="date" placeholder="Included Ins Codes">
               </div>
             </div>
           </form>
         </div>
 
+
+        <div>
+          <form class="row">
+            <div class="col-3 pt-2">
+              <div class="py-2 pl-0 " id="btnside">
+                <button class="btn" id="btn11"><span>- I</span> INCLUDE INS</button>
+             </div>
+            </div>
+          </form>
+        </div>
+
+        
+
       </section>
 
+      <section class="container pt-1" style="justify-content: stretch; !important">
+        <div>
+          <h5 class="py-2">Excluded Ins Codes
+          </h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group6 date w-36" id="datepicker">
+                <input type="text" class="form-control bg-brown" id="date" placeholder="Excluded Ins Codes">
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div>
+          <form class="row">
+            <div class="col-3 pt-2">
+              <div class="py-2 pl-0 " id="btnside">
+                <button class="btn" id="btn11"><span>- E</span> EXCLUDE INS</button>
+             </div>
+            </div>
+          </form>
+        </div>
+
+        
+
+      </section>
+
+      <section class="container pt-1" style="justify-content: stretch; !important">
+        <div>
+          <h5 class="py-2">Selected Payor(s)
+          </h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group6 date w-36" id="datepicker">
+                <input type="text" class="form-control bg-brown" id="date" placeholder="Selected Payor(s)">
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div>
+          <form class="row">
+            <div class="col-3 pt-2">
+              <div class="py-2 pl-0 " id="btnside">
+                <button class="btn" id="btn11"><span>- R</span> PAYOR</button>
+             </div>
+            </div>
+          </form>
+        </div>
+
+        
+
+      </section>
+
+     
 
       <section class="container pt-2">
         <div>
-          <h5 class="py-2">Sort By</h5>
+          <h5 class="py-2">Order By</h5>
           <form class="row">
             <div class="col-3">
               <div class="input-group2 date w-100" id="datepicker">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked="">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                 <label class="form-check-label mt--10" for="flexRadioDefault1">
-                  <h5 class="py-5">Patient
+                  <h5 class="py-5">Date
                  </h5>
                  </label> &nbsp; &nbsp; &nbsp;
 
@@ -251,17 +380,27 @@
                 <label class="form-check-label mt--10" for="flexRadioDefault1">
                   <h5 class="py-5">Rx#
                  </h5>
-                </label> &nbsp; &nbsp; &nbsp;
+                </label>
 
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">              
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <h5 class="py-2">Report Type</h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group2 date w-100" id="datepicker">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                 <label class="form-check-label mt--10" for="flexRadioDefault1">
-                  <h5 class="py-5">Expired Date
+                  <h5 class="py-5">Details
                  </h5>
-                </label> &nbsp; &nbsp; &nbsp;
+                 </label> &nbsp; &nbsp; &nbsp;
 
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">              
+                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">              
                 <label class="form-check-label mt--10" for="flexRadioDefault1">
-                  <h5 class="py-5">Prescriber
+                  <h5 class="py-5">Summary
                  </h5>
                 </label>
 
@@ -272,8 +411,11 @@
 
       </section>
 
+
+     
+
       <div>
-        <div class="py-2 pl-0 mt-0" id="btnside">
+        <div class="py-2 pl-3 pt-3" id="btnside">
            <button class="btn" id="btn7"><span>- T</span> PRINT</button>
             <button class="btn" id="btn7"><span>- P</span> PREVIEW</button>
             <button class="btn" id="btn7"><span>- E</span> EXPORT</button>

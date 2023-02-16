@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reports | Partial Fills Filled  </title>
+  <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+  <link rel="stylesheet" href="style.css">
+
+
+    <!-- Bootstrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+  <!-- Moment.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- Tempus Dominus Bootstrap 4 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"></script>
+  
+  
+</head>
+
+<body>
+
+  <div class="pt-5 pl-4">
+    <div class="title">
+      <h2 class="title-text ml-lg-12 ">Reports | <span class="blue"> Partial Fills Filled
+      </span>
+      </h2>
+    </div>
+     
+      
+    </div>
+  <div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-light nav1">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"> Partial Fills Filled
+        </a>
+
+      </div>
+    </nav>
+
+  <div class="col-12 area flex" style="height: 51rem;">
+    
+    <div class="col-6" style="height:30rem; width: 40%;">
+
+     
+      <section class="container pt-3">
+        <div>
+          <h5 class="py-2">From Date
+          </h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" placeholder="01/01/2023" data-target="#datetimepicker1">
+                            <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                              <div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
+                            </div>
+                      </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div>
+          <h5 class="py-2">To Date
+          </h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" placeholder="10/25/2023" data-target="#datetimepicker1">
+                            <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                              <div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
+                            </div>
+                      </div>
+            </div>
+          </form>
+        </div>
+        
+
+      </section>
+
+
+      <section class="container pt-3">
+        
+        <div>
+          <h5 class="py-2 flex justify-content-between">Drug <span class="brown"> <span style="color: #F85B04;"> 🡢 </span> for Equv; 
+            <span style="color: #F85B04;">Shift + 🡢</span>for Gen Equv</span> </h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" id="date" placeholder="Search Drug">
+                <span class="input-group-append">
+                  <span class="input-group-text d-block">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <h5 class="py-2">Insurance(Blank=ALL)
+          </h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" id="date" placeholder="Insurance">
+                <span class="input-group-append">
+                  <span class="input-group-text d-block">
+                    <i class="fa fa-sort-desc"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        
+        
+
+      </section>
+
+
+
+      <section class="container pt-3">
+        <div>
+          <h5 class="py-2">Rx Status
+          </h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" id="date" placeholder="UNBILLED">
+                <span class="input-group-append">
+                  <span class="input-group-text d-block">
+                    <i class="fa fa-sort-desc"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <h5 class="py-2">Partial Fills
+          </h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" id="date" placeholder="ALL">
+                <span class="input-group-append">
+                  <span class="input-group-text d-block">
+                    <i class="fa fa-sort-desc"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+       
+      </section>
+
+
+      <div class="pl-3">
+        <h5 class="py-2">Sort By</h5>
+        <form class="row">
+          <div class="col-3">
+            <div class="input-group2 date w-100" id="datepicker">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked="">
+              <label class="form-check-label mt--10" for="flexRadioDefault1">
+                <h5 class="py-5">Date Filled
+               </h5>
+               </label> &nbsp; &nbsp; &nbsp;
+
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">              
+              <label class="form-check-label mt--10" for="flexRadioDefault1">
+                <h5 class="py-5">Rx No
+               </h5>
+              </label>
+
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="pl-3">
+        <h5 class="py-2">Fill View</h5>
+        <form class="row">
+          <div class="col-3">
+            <div class="input-group2 date w-100" id="datepicker">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked="">
+              <label class="form-check-label mt--10" for="flexRadioDefault1">
+                <h5 class="py-5">Individual
+               </h5>
+               </label> &nbsp; &nbsp; &nbsp;
+
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">              
+              <label class="form-check-label mt--10" for="flexRadioDefault1">
+                <h5 class="py-5">Cumulative
+               </h5>
+              </label>
+
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="pl-3">
+        <h5 class="py-2">Detail
+        <form class="row">
+          <div class="col-3">
+            <div class="input-group2 date w-100" id="datepicker">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked="">
+              <label class="form-check-label mt--10" for="flexRadioDefault1">
+                <h5 class="py-5">Individual
+               </h5>
+               </label> &nbsp; &nbsp; &nbsp;
+
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">              
+              <label class="form-check-label mt--10" for="flexRadioDefault1">
+                <h5 class="py-5">Summary
+               </h5>
+              </label>
+
+            </div>
+          </div>
+        </form>
+      </div>
+     
+      <div>
+        <div class="py-2 pl-3" id="btnside">
+            <button class="btn" id="btn7"><span>- T</span> PRINT</button>
+            <button class="btn" id="btn7"><span>- P</span> PREVIEW</button>
+            <button class="btn" id="btn7"><span>- E</span> EXPORT</button>
+            <button class="btn" id="btn7"><span>- C</span> CANCEL</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-6 pt-2" style="height: 48rem; width: 68rem; border:1px solid rgba(0, 0, 0 4%);">
+
+      <img src="icon/image 10.png" alt="" style="width: 1094.73px;
+      height: 768.51px;">
+
+    </div>
+
+  </div>
+
+  </div>
+
+  <script src="js/tracking.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+
+</body>
+
+</html>

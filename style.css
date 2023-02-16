@@ -41,6 +41,10 @@ body{
     text-transform: uppercase;
 }
 
+.w-36{
+    width: 36rem !important;
+}
+
 .form-control {
     display: block;
     width: 100%;
@@ -1657,6 +1661,19 @@ fieldset {
     color: rgb(81, 163, 81);
     border-width: 1px;
     border-color: rgb(81, 163, 81);
+    border-radius: 5px;
+}
+
+#btn11 {
+    background-color: #ffffff;
+    height: 40px;
+    border-width: 1px;
+    width: 9rem;
+    font-weight: 550;
+    border-color: #51a351;
+    align-self: center;
+    font-size: 13px;
+    color: #51a351;
     border-radius: 5px;
 }
 
